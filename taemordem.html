@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.alert {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FF0000;
+      padding: 100px;
+      border-radius: 10px;
+      font-size: 90px;
+      font-weight: bold;
+      color: #FFFFFF;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+.button {
+    background-color: #111;
+    color: white;
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+    <img src="./logo-print.png" />
+    <!-- Primeiro Botão -->
+  <button id="fila-button" onclick="audio.play()" class="button">ACESSO SÓ DE IS</button>
+  <button id="clear-button" class="button">Limpar</button>
+  <br>
+
+  <!-- Segundo Botão  -->
+  <button id="pix-intermitente" onclick="audiopix()" class="button">PIX FORA</button>
+  <button id="clear-pix" class="button">Limpar</button>
+  <br>
+
+  <!-- Terceiro Botão -->
+  <button id="sefaz" onclick="audiosefaz()" class="button">SEFAZ FORA</button>
+  <button id="clear-sefaz" class="button">Limpar</button>
+  <br>
+
+  <!-- Quarto Botão -->
+  <button id="web" onclick="audioweb()" class="button">WEB FORA</button>
+  <button id="clear-web" class="button">Limpar</button>
+  <br>
+
+  <!-- Quinto Botão -->
+  <button id="nuvem" onclick="audionuvem()" class="button">NUVEM FISCAL</button>
+  <button id="clear-nuvem" class="button">Limpar</button>
+  <br>
+
+  <!-- Sexto Botão -->
+  <button id="atencao" onclick="audioatencao()" class="button">ATENÇÃO</button>
+  <button id="clear-atencao" class="button">Limpar</button>
+  <br>
+  <br>
+  <br>
+  
+  <!-- Sétimo Botão -->
+  <button id="marquinhos" onclick="audiomarquinhos()" class="button">MARQUINHOS</button>
+  <button id="clear-marquinhos" class="button">Limpar</button>
+  <br>
+
+   <!-- //Oitavo Botão -->
+  <button id="renato" onclick="audiorenato()" class="button">RENATO</button>
+  <button id="clear-renato" class="button">Limpar</button>
+  <br>
+
+  <!-- >Nono Botão -->
+  <button id="fernanda" onclick="audiofernanda()" class="button">FERNANDA</button>
+  <button id="clear-fernanda" class="button">Limpar</button>
+  <br>
+<!--
+  //Décimo Botão
+-->
+  <button id="zenaide" onclick="audiozenaide()" class="button">ZENAIDE</button>
+  <button id="clear-zenaide" class="button">Limpar</button>
+  <br>
+<!-- 
+  //Décimo Primeiro Botão
+  -->
+
+  <button id="francisco" onclick="audiofrancisco()" class="button">FRANCISCO</button>
+  <button id="clear-francisco" class="button">Limpar</button>
+  <br>
+
+</div>
+<div id="alert-container"></div>
+<script src="script.js"></script>
+</body>
+</html> 
